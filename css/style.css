@@ -90,6 +90,8 @@ body {
   line-height: 200%;
   font-weight: 700;
   letter-spacing: 0.2px;
+
+  cursor: pointer;
 }
 
 .button--primary {
@@ -97,10 +99,33 @@ body {
   color: #fff;
 }
 
+.button--primary:hover {
+  opacity: 0.9;
+}
+
+.button--primary:focus {
+}
+
+.button--primary:active {
+  background-color: #e45f2a;
+}
+
 .button--secondary {
   background-color: transparent;
   color: #0d5c63;
   border: 1px solid #0d5c63;
+}
+
+.button--secondary:hover {
+  opacity: 0.9;
+  background-color: #dddddd;
+}
+
+.button--secondary:focus {
+}
+
+.button--secondary:active {
+  background-color: #b8b8b8;
 }
 
 /* header --------------------------------------------------------------------------------------------- */
@@ -192,7 +217,7 @@ body {
 
 .introduce__container {
   position: relative;
-  z-index: 10;
+  z-index: 1;
   padding: 184px 20px 191px 20px;
 }
 
@@ -291,7 +316,7 @@ body {
 .main__services {
   margin-top: -111px;
   position: relative;
-  z-index: 10;
+  z-index: 1;
 }
 
 .services {
@@ -341,6 +366,14 @@ body {
   padding: 35px 40px;
   background-color: #fff;
   height: 100%;
+  box-shadow: 0px 13px 19px 0px #00000012;
+
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.item-service:hover {
+  transform: scale(1.1);
 }
 
 .item-service--green {
