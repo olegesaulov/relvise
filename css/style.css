@@ -969,3 +969,116 @@ body {
     padding: 10px 15px;
   }
 }
+
+/* getintouch --------------------------------------------------------------------- */
+
+.main__getintouch {
+  margin: 80px 0px 180px 0px;
+}
+
+.getintouch {
+}
+
+.getintouch__container {
+  padding: 0 20px;
+}
+
+.getintouch__header {
+  margin: 0px 0px 80px 0px;
+}
+
+.getintouch__body {
+  display: flex;
+  align-items: center;
+  margin: 0 -20px;
+}
+
+.getintouch__column {
+  flex: 0 1 33.333%;
+  padding: 0 20px;
+}
+
+.getintouch__item {
+}
+
+.item-getintouch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 50px;
+  cursor: pointer;
+  transition: all 0.3s, transform 0.5s;
+}
+
+.item-getintouch > *:not(:last-child) {
+  margin: 0px 0px 15px 0px;
+}
+
+.item-getintouch__icon {
+  transform: rotate(0deg);
+  transition: transform 0.75s ease-in-out;
+}
+
+.item-getintouch__info {
+  text-align: center;
+}
+
+.item-getintouch__link {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.2px;
+}
+
+.item-getintouch__link:hover {
+  text-decoration: underline;
+}
+
+.item-getintouch__support {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.1px;
+}
+
+.item-getintouch__submit {
+  color: #ff7b47;
+  border: 1px solid #ff7b47;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.item-getintouch__submit:active {
+  color: #0d5c63;
+  border: 1px solid #0d5c63;
+}
+
+.item-getintouch:hover {
+  background-color: #252b42;
+  transform: scale(1.23);
+  color: #fff;
+}
+
+.item-getintouch:hover .item-getintouch__icon {
+  filter: brightness(0) invert(1);
+  transform: rotate(360deg);
+}
+
+.item-getintouch:hover .item-getintouch__submit {
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.item-getintouch:hover .item-getintouch__submit:hover {
+  background-color: #fff;
+  color: #ff7b47;
+  border: 1px solid #ff7b47;
+  opacity: 1;
+}
+
+.item-getintouch:hover .item-getintouch__submit:active {
+  background-color: #ddd;
+  color: #ff7b47;
+  border: 1px solid #ff7b47;
+}
