@@ -833,20 +833,139 @@ body {
   padding: 0 20px;
 }
 
+@media (max-width: 992px) {
+  .clients__container {
+    padding: 0 15px;
+  }
+}
+
 .clients__items {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: -10px -20px;
 }
 
 .clients__item {
   flex: 0 1 16.6667%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 10px 20px;
   min-width: 140px;
 }
 
 .client__icon img {
   max-width: 100%;
+}
+
+/* subscribe ----------------------------------------------------------------- */
+
+.main__subscribe {
+  margin: 20px 0px 0px 0px;
+}
+
+.subscribe {
+  position: relative;
+  padding: 0px 0px 20px 0px;
+}
+
+.subscribe::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 77px;
+  background-color: #252b42;
+}
+
+.subscribe__container {
+  padding: 0 20px;
+}
+
+.subscribe__content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 30px;
+  background-color: #17213c;
+  padding: 30px 40px 30px 50px;
+}
+
+@media (max-width: 1050px) {
+  .subscribe__content {
+    margin: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .subscribe__content {
+    display: block;
+    margin: 0 -20px;
+    padding: 20px;
+  }
+}
+
+.subscribe__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 133%;
+  letter-spacing: 0.1px;
+  color: #fff;
+  max-width: 266px;
+}
+
+@media (max-width: 767px) {
+  .subscribe__title {
+    max-width: 100%;
+    margin: 0px 0px 20px 0px;
+  }
+}
+
+@media (max-width: 560px) {
+  .subscribe__title {
+    font-size: 18px;
+  }
+}
+
+.subscribe__form {
+  flex: 0 1 50%;
+  display: flex;
+  background-color: #f9f9f9;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+}
+
+.subscribe__email {
+  flex: 1 1 auto;
+  min-height: 58px;
+  background-color: #f9f9f9;
+  color: #737373;
+  padding: 15px 20px;
+}
+
+.subscribe__email:focus {
+  color: #000;
+}
+
+@media (max-width: 360px) {
+  .subscribe__email {
+    max-width: calc(100% - 94px); /* 94px - btn width */
+  }
+}
+
+.subscribe__button {
+  border-radius: 0 5px 5px 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 200%;
+  letter-spacing: 0.2px;
+}
+
+@media (max-width: 479px) {
+  .subscribe__button {
+    padding: 10px 15px;
+  }
 }
