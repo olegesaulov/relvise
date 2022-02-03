@@ -973,22 +973,23 @@ body {
 /* getintouch --------------------------------------------------------------------- */
 
 .main__getintouch {
-  margin: 80px 0px 180px 0px;
+  padding: 80px 0px 180px 0px;
 }
 
 @media (max-width: 1023px) {
   .main__getintouch {
-    margin: 50px 0px 100px 0px;
+    padding: 50px 0px 100px 0px;
   }
 }
 
 @media (max-width: 479px) {
   .main__getintouch {
-    margin: 30px 0px 50px 0px;
+    padding: 30px 0px 50px 0px;
   }
 }
 
 .getintouch {
+  background-color: #f3f3f3;
 }
 
 .getintouch__container {
@@ -1048,7 +1049,6 @@ body {
 }
 
 .item-getintouch__icon {
-  transform: rotate(0deg);
   transition: transform 0.75s ease-in-out;
 }
 
@@ -1119,4 +1119,64 @@ body {
   background-color: #ddd;
   color: #ff7b47;
   border: 1px solid #ff7b47;
+}
+
+/* contact-us ------------------------------------------------- */
+
+.main__contact-us {
+}
+
+.contact-us {
+  background-color: #fff;
+}
+
+.contact-us__container {
+  padding: 40px 20px;
+}
+
+.contact-us__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  .contact-us__body {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-us__body > *:not(:last-child) {
+    margin: 0px 0px 20px 0px;
+  }
+}
+
+.contact-us__content {
+  padding: 0px 20px 0px 0px;
+}
+
+.contact-us__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 133%;
+  letter-spacing: 0.1px;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 479px) {
+  .contact-us__title {
+    font-size: 18px;
+  }
+}
+
+.contact-us__info {
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: 0.2px;
+  color: #737373;
+}
+
+.contact-us__button {
+  padding: 15px 40px;
+  border-radius: 5px;
 }
